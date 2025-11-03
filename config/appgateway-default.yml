@@ -53,14 +53,14 @@ spring:
                           args:
                             name: productservice
                             fallbackUri: forward:/product-fallback                  
-        kubernetes:
-            discovery:
-                enabled: true 
-                all-namespaces: false
-                include-not-ready-addresses: true
-                discovery-server-url: "http://spring-cloud-kubernetes-discoveryserver:8761"
-            loadbalancer:
-                mode: SERVICE
+        #kubernetes:
+            #discovery:
+                #enabled: true 
+                #all-namespaces: false
+               # include-not-ready-addresses: true
+                #discovery-server-url: "http://spring-cloud-kubernetes-discoveryserver:8761"
+            #loadbalancer:
+                #mode: SERVICE
 # ingress controller service url - minikube service list
 #ignore null fields in json
     jackson :

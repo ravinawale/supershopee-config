@@ -1,19 +1,7 @@
 spring:
     main:
         web-application-type: reactive
-        # allow-bean-definition-overriding: true
-        # spring.main.allow-bean-definition-overriding=true
     cloud:
-        # discovery:
-        # enabled: false  
-        # spring.cloud.discovery.client.health-indicator.enabled=false
-        # spring.cloud.kubernetes.loadbalancer.mode=SERVICE
-        discovery:
-            client:
-                health-indicator:
-                    enabled: false    
-                composite-indicator:
-                    enabled: false 
         gateway :
             discovery:
                 locator:
@@ -53,16 +41,6 @@ spring:
                           args:
                             name: productservice
                             fallbackUri: forward:/product-fallback                  
-        #kubernetes:
-            #discovery:
-                #enabled: true 
-                #all-namespaces: false
-               # include-not-ready-addresses: true
-                #discovery-server-url: "http://spring-cloud-kubernetes-discoveryserver:8761"
-            #loadbalancer:
-                #mode: SERVICE
-# ingress controller service url - minikube service list
-#ignore null fields in json
     jackson :
         default-property-inclusion: NON_NULL
 #secret key - should be encrypted

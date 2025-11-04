@@ -52,7 +52,6 @@ jwt:
     secret: secretkey
     token:
         validity: 180000
-
 logging:
     file: 
         name: app-gateway.log

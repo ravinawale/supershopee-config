@@ -1,13 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:supershopee
-    username: sa
-    password: password
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    show-sql: true
-    hibernate:
-        ddl-auto : create-drop
-    properties :
-        hibernate:
-            format-sql : true
+    url: jdbc:mysql://${DB_HOST}:3306/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+

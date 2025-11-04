@@ -3,4 +3,3 @@ spring:
     url: jdbc:mysql://${DB_HOST}:3306/${DB_NAME}
     username: ${DB_USER}
     password: ${DB_PASSWORD}
-

@@ -23,7 +23,7 @@ spring:
                         - name: CircuitBreaker
                           args:
                             name: auth-service
-                            fallbackUri: forward://auth-fallback
+                            fallbackUri: forward:/auth-fallback
                   - id: product-route
                     uri: lb://product-service
                     predicates :

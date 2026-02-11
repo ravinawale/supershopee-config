@@ -1,13 +1,11 @@
-spring:
-  datasource:
-    url: jdbc:h2:mem:supershopee
-    username: sa
-    password: password
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    show-sql: true
-    hibernate:
-        ddl-auto : create-drop
-    properties :
-        hibernate:
-            format-sql : true
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Super Shopee related docker APIs "
+  contactDetails:
+    name: "Ravindra Nawale - Developer"
+    email: "ravi.nawale@gmail.com"
+  onCallSupport:
+    - (111) 222-1234
+    - (111) 222-1345
